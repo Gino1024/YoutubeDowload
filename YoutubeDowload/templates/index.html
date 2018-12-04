@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/css/main.css?20181204">
+    
+
+
+    <title>YoutubeDowload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action="/submit" method="POST" class="a">
+    </p><h1>YoutubeDowload</h1><p>
+    <br><label>請輸入網址：</label>
+        <input type="texp" name="url">
+        <button type="submit" class="button">Send</button>
+    </form>
+    <br>
+      {%if filename%}
+      <p><span>下載完成!</span></p>
+      <p><span>視頻標題：{{ filename }} </span></p>
+      <p><span><img src="{{thumbnail}}" alt="{{filename}} width="200" height="200""></span></p>
+      <p><span>視頻說明：{{ decription }} </span></p>
+      <p><span>視頻長度/秒：{{ length }} </span></p>
+      {%endif%}
+    <br>
+        <p>COPYRIGHT@GinoWeng</p>
+</body>
+</html>

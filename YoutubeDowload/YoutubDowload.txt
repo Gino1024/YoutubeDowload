@@ -1,0 +1,6 @@
+@Flask框架
+@Python+Pytube
+@Html + Css 
+@簡單轉載影片
+GitHub:https://github.com/Gino1024
+說明：複製網址後點下Send後等數秒就好
